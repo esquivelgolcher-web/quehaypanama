@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Que Hay Panamá">
+  <title>Que Hay Panamá</title>
+  <circle cx="60" cy="60" r="58" fill="#8A1E2D"/>
+  <circle cx="60" cy="60" r="46.5" fill="#E3B21E"/>
+  <!-- Q -->
+  <circle cx="59" cy="64" r="23" fill="none" stroke="#111111" stroke-width="14"/>
+  <path d="M61 75 L78 93" fill="none" stroke="#111111" stroke-width="14" stroke-linecap="round"/>
+  <!-- flecha de retorno (carriage return) -->
+  <g transform="rotate(-10 40 34)">
+    <path d="M31 36 H49 V22" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 36 L39 29.5 M31 36 L39 42.5" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
