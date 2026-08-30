@@ -1,6 +1,5 @@
 name: Actualizar y publicar
 
-# Se ejecuta cada 3 horas, y tambien manualmente desde la pestaña "Actions".
 on:
   schedule:
     - cron: "20 */3 * * *"
@@ -11,13 +10,11 @@ on:
       - "data/archive.json"
       - "README.md"
 
-# Permisos: escribir en el repo (para guardar el historial) y publicar en Pages.
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Evita que dos ejecuciones pisen el despliegue a la vez.
 concurrency:
   group: quehaypanama
   cancel-in-progress: false
@@ -32,10 +29,12 @@ jobs:
       - name: Preparar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Generar el sitio
         run: node src/build.mjs
