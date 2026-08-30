@@ -1,0 +1,15 @@
+{
+  "name": "quehaypanama",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agregador independiente de noticias de Panamá (La Prensa + La Estrella).",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "preview": "node src/serve.mjs",
+    "dev": "node src/build.mjs && node src/serve.mjs"
+  }
+}

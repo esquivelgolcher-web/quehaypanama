@@ -1,0 +1,40 @@
+{
+  "title": "Que Hay Panamá",
+  "kicker": "Medio digital independiente",
+  "tagline": "Lo que pasa en Panamá, resumido y con enlace a la fuente.",
+  "description": "Medio digital independiente de noticias de Panamá. Cada día reunimos entre 5 y 10 titulares de La Prensa y La Estrella de Panamá, con un resumen breve y el enlace a la publicación original.",
+  "domain": "www.quehay.news",
+  "baseUrl": "https://www.quehay.news",
+  "locale": "es_PA",
+  "timezone": "America/Panama",
+  "city": "Ciudad de Panamá",
+
+  "social": [
+    { "name": "Instagram", "handle": "@quehaypma", "url": "https://www.instagram.com/quehaypma/" },
+    { "name": "X", "handle": "@QueHayPanama_", "url": "https://x.com/QueHayPanama_" },
+    { "name": "Threads", "handle": "@quehaypma", "url": "https://www.threads.com/@quehaypma" },
+    { "name": "Facebook", "handle": "qhaypanama", "url": "https://www.facebook.com/qhaypanama" }
+  ],
+
+  "home": { "min": 5, "max": 10 },
+  "images": true,
+  "archiveMaxItems": 4000,
+  "recentEditionsOnHome": 14,
+  "ownFeedItems": 50,
+
+  "sources": [
+    {
+      "name": "La Prensa",
+      "homepage": "https://www.prensa.com",
+      "type": "rss",
+      "url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml"
+    },
+    {
+      "name": "La Estrella de Panamá",
+      "homepage": "https://www.laestrella.com.pa",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=when:2d%20site:laestrella.com.pa&hl=es-419&gl=PA&ceid=PA:es-419",
+      "via": "Google Noticias"
+    }
+  ]
+}
